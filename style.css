@@ -1,0 +1,302 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    background-color: white;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding: 8px 15px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+.logo {
+    font-family: cursive;
+    font-weight: 600;
+    font-size: 1.9vmax;
+    display: flex;
+    padding: 2rem;
+    cursor: pointer;
+}
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-items i {
+    display: none;
+}
+.nav-items button,
+footer button {
+    padding: 8px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 1.3vmax;
+    border-radius: 5px;
+    margin: 0 5px;
+    margin-right: 50px;
+    text-decoration: none;
+}
+.navigation {
+    display: flex;
+    gap: 20px;
+    font-size: 1.4vmax;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navigation a {
+    color: black;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.navigation a:hover {
+    color: rgb(151, 250, 4);
+}
+#hero-section {
+    height: 93vh;
+    display: flex;
+    border-bottom: 1px solid black;
+    margin-top: 50px;
+    background-color: white;
+}
+#hero-section .left {
+    height: 90vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    z-index: 1;
+}
+.intro div {
+    margin: 5px 0;
+    font-size: 4.5vmax;
+    letter-spacing: 1px;
+}
+.intro #cv-btn {
+    padding: 8px 20px;
+    background-color: rgb(152, 249, 6);
+    color: white;
+    border: none;
+    font-size: 1.3vmax;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+#hero-section .right {
+    height: 88vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#hero-section .right img {
+    max-height: 35vw;
+    margin-top: 30px;
+}
+.social {
+    font-size: 1.8vmax;
+    margin-top: 70px;
+}
+.social i,
+footer ul li a {
+    margin: 20px;
+    color: rgb(90, 146, 6);
+    border-radius: 50%;
+    transition: 0.6s;
+}
+.social i:hover {
+    color: rgb(65, 103, 8);
+    box-shadow: 5px 10px 15px greenyellow;
+    cursor: pointer;
+    transform: translate(0, -10px);
+    transition: .6s;
+}
+#cv-btn:hover {
+    box-shadow: 5px 10px 15px greenyellow;
+}
+#hire-btn:hover{
+    cursor: pointer;
+    box-shadow: 5px 10px 15px green;
+}
+#about-section {
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid black;
+    background-color: white;
+}
+#about-section .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+#about-section .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#about-section .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 3.5rem;
+}
+#about-section .right div {
+    margin: 20px 0;
+    font-size: 3vmax;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+#project-section {
+    height: auto;
+    width: auto;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+#project-section h1 {
+    margin: 20px 0;
+    font-size: 3vmax;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+footer {
+    height: 10vh;
+    background-color: black;
+    color: grey;
+    padding: 50px 20px;
+}
+#icon-mob {
+    display: none;
+}
+footer ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+@media only screen and (max-width: 600px) {
+    .navigation, #hire-btn {
+        display: none;
+    }
+    .nav-items i {
+        display: block;
+        margin-right: 20px;
+        font-size: 5vmin;
+    }
+    .logo {
+        font-size: 3.9vw;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #hero-section {
+        height: 90vh;
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid rgb(90, 88, 88);
+    }
+    #hero-section .left {
+        width: 100vw;
+        height: 30vh;
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .intro {
+        text-align: left;
+    }
+    #cv-btn {
+        margin-left: 10px;
+        width: 70vw;
+        border: 0;
+        font-size: 3vmax;
+    }
+    .social {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+    }
+    .social i {
+        margin: 15px;
+        color: black;
+        border-radius: 50%;
+        transition: 0.6s;
+        font-size: 0.80rem;
+        cursor: pointer;
+    }
+    #hero-section .right {
+        height: 50vh;
+        width: 100vw;
+    }
+    #hero-section .right img {
+        margin: 0;
+        max-height: 45vh;
+    }
+    #about-section {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    #about-section .right {
+        height: 40vh;
+        width: auto;
+        display: flex;
+        justify-content: start;
+        padding: 50px 30px 20px 30px;
+    }
+    #about-section .left {
+        height: 60vh; 
+        width: 100vw;
+        
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        padding: 30 15px;
+    }
+    #icon-mob {
+        display: block;
+        margin-top: 10px;
+    }
+    #icon-mob i {
+        margin: 10px;
+        color: rgb(90, 146, 6);
+        border-radius: 50%;
+        transition: 0.6s;
+    }
+    #icon-comp {
+        display: none;
+    }
+}
